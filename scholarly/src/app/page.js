@@ -32,13 +32,8 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-<<<<<<< Updated upstream
-          src="/dino.jpg"
-          alt="Next.js Logo"
-=======
           src="/hp.jpg"
           alt="Scholarly logo"
->>>>>>> Stashed changes
           width={180}
           height={37}
           priority

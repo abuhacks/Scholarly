@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             background-color: hsl(0, 0%, 100%);
+            position: relative; /* Make sure the dinosaur image is positioned relative to the body */
         }
         .container {
             width: 80%;
@@ -33,39 +34,39 @@
             margin-top: 20px; /* Add a bit of space after the header */
         }
         .nav-item {
-        background-color: white;
-        border: 2px solid green;
-        padding: 20px;
-        font-size: 24px;
-        display: flex; /* Use flexbox to align children */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        text-align: center; /* Center text for browsers that don't support flexbox */
-    }
+            background-color: white;
+            border: 2px solid green;
+            padding: 20px;
+            font-size: 24px;
+            display: flex; /* Use flexbox to align children */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center; /* Center text for browsers that don't support flexbox */
+        }
         .dinosaur {
+            position: absolute; /* Added absolute positioning */
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
             max-width: 100px;
-            margin: 20px auto 30px; /* Center the image and add margin at the bottom */
         }
         .footer {
             font-size: 14px;
             color: #888;
-            margin-top: 700px;
+            margin-top: 800px; /* Adjust if necessary */
             text-align: center; /* Center footer text */
         }
     </style>
 </head>
 <body>
     <div class="header">Scholarly</div>
+    <!-- Ensure you replace 'dino.jpg' with the actual path to your image -->
+    <img src="dino.jpg" alt="Dinosaur" class="dinosaur"> <!-- Moved the dinosaur image outside the container -->
     <div class="container">
         <div class="navigation">
             <div class="nav-item">Math</div>
             <div class="nav-item">Science</div>
             <div class="nav-item">History</div>
         </div>
-        
-        <!-- Ensure you replace 'path-to-dinosaur-image.jpg' with the actual path to your image -->
-        <img src="dino.jpg" alt="Dinosaur" class="dinosaur"> 
-
         <div class="footer">
             © 2024 Scholarly. All rights reserved.
         </div>
