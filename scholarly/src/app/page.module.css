@@ -5,18 +5,31 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-image: url('/hp.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  display: flex; /* Ensure flexbox is used */
+  justify-content: flex-end; /* Align children to the right */
+  align-items: center; /* Center-align children vertically */
+  width: 100%; /* Take the full width */
+  position: relative; /* Add position relative to allow absolute positioning of children */
+  /* Keep the rest of your styles unchanged */
 }
+
+
+.imageLink {
+  position: absolute; /* Position the link absolutely within .description */
+  top: -60px; /* Nudge up by 10px, adjust as needed */
+  right: -60px; /* Nudge right by 10px, adjust as needed */
+}
+
+.pencildescription {
+  position: absolute;
+}
+
 
 .description a {
   display: flex;
