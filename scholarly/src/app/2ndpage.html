@@ -36,15 +36,13 @@
         }
         .navigation {
             display: flex;
-            justify-content: flex-start; /* Aligns items to the left */
-            margin-right: 50px; /* Moves the item to the left by adding space to the right */
+            
             gap: 60px; /* Adjusts the gap between items */
         }
 
         .navigation2 {
             display: flex;
             margin-top: 80px;
-            margin-left: 20px; /* Moves the item to the right by adding space to the left */
             gap: 60px; /* Adjusts the gap between items */
         }
 
@@ -52,16 +50,18 @@
             font-family: 'Lobster';
             background-color: rgb(240, 246, 231);
             border: 2px solid green;
-            padding: 20px; /* Adjusted back to have padding for content */
+            padding: 20px;
             font-size: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* Set fixed width and height */
-            width: 180px; /* Example width */
-            height: 15px; /* Example height */
-
+            width: 180px; /* Adjust as needed */
+            height: 80px; /* Adjust for content size */
+            cursor: pointer; /* Changes cursor to indicate button functionality */
+            outline: none; /* Removes the outline to keep consistent styling */
+            border-radius: 4px; /* Optional for rounded corners */
+            margin: 10px; /* Provides spacing between buttons */
         }
 
         .dinosaur {
@@ -84,24 +84,26 @@
     <img src="topgreen.jpg" alt="Header" class="header">
     <div class="container">
         <div class="navigation">
-            <div class="nav-item">Astronomy</div>
-            <div class="nav-item">Math</div>
-            <div class="nav-item">Science</div>
-            <div class="nav-item">History</div>
-            <div class="nav-item">Physics</div>
+            <button onclick="location.href='astronomy-page.html';" class="nav-item">Astronomy</button>
+            <button onclick="location.href='math-page.html';" class="nav-item">Math</button>
+            <button onclick="location.href='science-page.html';" class="nav-item">Science</button>
+            <button onclick="location.href='history-page.html';" class="nav-item">History</button>
+            <button onclick="location.href='physics-page.html';" class="nav-item">Physics</button>
         </div>
         <div class="navigation2">
-            <div class="nav-item">Archeology</div>
-            <div class="nav-item">Computer Science</div>
-            <div class="nav-item">Art</div>
-            <div class="nav-item">Geography</div>
-            <div class="nav-item">Finance</div>
+            <button onclick="location.href='archeology-page.html';" class="nav-item">Archeology</button>
+            <button onclick="location.href='computer-science-page.html';" class="nav-item">Computer Science</button>
+            <button onclick="location.href='art-page.html';" class="nav-item">Art</button>
+            <button onclick="location.href='geography-page.html';" class="nav-item">Geography</button>
+            <button onclick="location.href='finance-page.html';" class="nav-item">Finance</button>
         </div>
     </div>
     <div class="footercontainer">
         <img src="bottomgreen.jpg" alt="Footer" style="width:100%; height:auto;">
         © 2024 Scholarly. All rights reserved.
     </div>
-    <img src="dinoRB.png" alt="Dinosaur" class="dinosaur">
+    <button class="image-button" onclick="window.location.href='destination-page.html';">
+        <img src="dinoRB.png" alt="Dinosaur" class="dinosaur">
+    </button>
 </body>
 </html>
