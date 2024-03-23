@@ -1,44 +1,26 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+      {/* Other content remains unchanged */}
+
+      {/* This container now offers flexibility to position the pencil image */}
+      <div className={styles.pencildescription} style={{ top: '40%', left: '70%' }}> {/* Example positioning */}
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/pencil.png"
+            alt="Pencil Logo"
+            style={{ width: "200px", height: "200px" }}  // You can adjust size here as well
+          />
+        </a>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/hp.jpg"
-          alt="Scholarly logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
+      {/* Grid layout unchanged */}
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
