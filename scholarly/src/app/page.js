@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -31,8 +32,13 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
+<<<<<<< Updated upstream
           src="/dino.jpg"
           alt="Next.js Logo"
+=======
+          src="/hp.jpg"
+          alt="Scholarly logo"
+>>>>>>> Stashed changes
           width={180}
           height={37}
           priority
@@ -59,9 +65,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            Lear <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Lear about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
 
         <a
