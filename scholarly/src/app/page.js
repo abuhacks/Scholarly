@@ -3,8 +3,23 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* Other content remains unchanged */}
+      <div className={styles.description}>
+        {/* Add the new imageLink class for additional positioning */}
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.imageLink}  // Apply the new class for positioning adjustments
+        >
+          <img
+            src="/tslate.png"
+            alt="Translation Logo"
+            style={{ width: "100px", height: "100px" }}
 
+          />
+        </a>
+      </div>
+      
       {/* This container now offers flexibility to position the pencil image */}
       <div className={styles.pencildescription} style={{ top: '40%', left: '70%' }}> {/* Example positioning */}
         <a
