@@ -6,7 +6,7 @@ export default function Home() {
         
         {/* Add the new imageLink class for additional positioning */}
         <a
-          href="/us.html"
+          href="/company.html"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.imageLink}  // Apply the new class for positioning adjustments
