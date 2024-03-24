@@ -23,7 +23,7 @@ body{
 .inner-section{
     width: 55%;
     float: right;
-    background-color: #fdfdfd;
+    background-color: #bedece;
     padding: 140px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
 }
@@ -35,7 +35,7 @@ body{
 }
 
 .text{
-    font-size: 13px;
+    font-size: 14px;
     color: #545454;
     line-height: 30px;
     text-align: justify;
