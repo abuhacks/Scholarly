@@ -95,13 +95,12 @@
 
         .background-image {
             position: absolute;
-            top: 20px; /* Move the image 20px higher. Adjust this value as needed. */
-            left: 15;
-            width: 80%; /* Ensures the image covers the container's width */
-            height: calc(100% + 20px); /* Compensate for the upward shift to cover the area */
-            object-fit: cover;
-            z-index: 0; /* Keep it behind the buttons */
-            
+            top: 20px;
+            left: 20px;
+            width: 105%; /* Cover the container's width */
+            height: 100%; /* Stretch to cover the container's height, can adjust based on the aspect ratio */
+            object-fit: cover; /* Cover the container without maintaining the image's aspect ratio; can cause some parts of the image to be cut off */
+            z-index: 0; /* Ensure it's behind the buttons */
         }
 
         .nav-item {
