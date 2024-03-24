@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 export default function Home() {
   return (
-    <main className={styles.main} style={{ position: 'relative' }}>
+    <main className={styles.main}>
       <div className={styles.description}>
         
         {/* Add the new imageLink class for additional positioning */}
@@ -48,7 +48,6 @@ export default function Home() {
             to START
         </p>
       </div>
-      
       <img
             src="/cross2.png"
             alt="Crossimage"
@@ -60,24 +59,25 @@ export default function Home() {
               right: '0px' }}  
           />
           <div style={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        position: 'relative',
-        width: '100%',
-        bottom: '5px',
-        boxSizing: 'border-box',
-        paddingRight: '20px',
-      }}>
-        <p style={{ 
-          color: '#000000',
-          fontSize: '35px',
-          fontFamily: 'Bradley Hand, cursive',
-          fontWeight: 'bold',
-          margin: '0',
-        }}>
+              display: 'flex',
+              justifyContent: 'flex-end',
+              position: 'relative',
+              width: '100%',
+              bottom: '5px',
+              boxSizing: 'border-box',
+              paddingRight: '20px',
+                      }}>
+          <p style={{ 
+              color: '#000000',
+              fontSize: '35px',
+              fontFamily: 'Bradley Hand, cursive',
+              fontWeight: 'bold',
+              margin: '0',
+                      }}>
           EDUCATION. MADE. EASY.
-        </p>
-      </div>
-    </main>
+  </p>
+  </div>
+  </main>
   );
-}
+  }
+
