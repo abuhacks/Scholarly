@@ -48,6 +48,7 @@ export default function Home() {
             to START
         </p>
       </div>
+
     </main>
   );
 }
