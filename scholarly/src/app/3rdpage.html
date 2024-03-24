@@ -34,7 +34,18 @@
             height: auto;
             display: block;
             margin: 0 auto;
+            
         }
+
+        .otherThing {
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-top: -400px; /* Adjust the value as needed */
+        }
+
 
         .middle {
             display: block; /* Makes sure the image is a block-level element */
@@ -54,24 +65,11 @@
             gap: 60px; /* Adjusts the gap between items */
         }
 
-        .nav-item {
-            font-family: 'Lobster', cursive;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            font-size: 24px;
-            cursor: pointer;
-            outline: none;
-            text-align: center;
-            margin: 10px; /* Provides vertical spacing between items */
-            color: black; /* Ensures text color is visible */
-        }
-
         .dinosaur {
             max-width: 130px;
             position: absolute;
-            top: 60px;
-            right: 40px;
+            top: 280px;
+            right: 1180px;
         }
         .footercontainer {
             text-align: center;
@@ -80,36 +78,42 @@
             background-color: hsl(0, 0%, 100%);
             padding: 0px 0;
             box-sizing: border-box;
+            z-index: -1; /* Keep it behind the buttons */
         }
 
-        .button-container {
+        .middle {
             display: flex;
-            flex-direction: column; /* Stacks items vertically */
+            flex-direction: column;
             align-items: center; /* Centers items horizontally */
-            justify-content: center; /* Adjusts vertical alignment, if needed */
-            text-align: center;
-            margin: 20px 0; /* Adds some space around the container */
+            justify-content: center; /* Adjusts vertical alignment */
+            position: relative; /* Establishes a positioning context */
+            max-width: 40%; /* Adjust as needed */
+            margin: auto; /* Centers the container */
+            padding: 20px; /* Adds some padding around the content */
+            top: 20px;
         }
 
-        .image-text-container {
-            position: relative;
-            display: inline-block; /* Use block or inline-block depending on your layout needs */
-        }
-
-        .overlay-text {
+        .background-image {
             position: absolute;
-            top: 50%; /* Center vertically */
-            left: 50%; /* Center horizontally */
-            transform: translate(-50%, -50%); /* Adjust positioning to truly center the element */
-            color: black; /* Text color */
-            font-size: 24px; /* Text size */
-            font-family: 'Lobster', cursive; /* Custom font */
+            top: 20px; /* Move the image 20px higher. Adjust this value as needed. */
+            left: 15;
+            width: 80%; /* Ensures the image covers the container's width */
+            height: calc(100% + 20px); /* Compensate for the upward shift to cover the area */
+            object-fit: cover;
+            z-index: 0; /* Keep it behind the buttons */
+            
         }
 
-        .image-text-container img {
-            display: block; /* Ensures there are no extra spaces inside the container */
-            width: 100%; /* Adjust as needed */
-            height: auto; /* Adjust as needed for aspect ratio */
+        .nav-item {
+            position: relative; /* Ensures that nav items are positioned above the background image */    
+            background-color: transparent;
+            border: none;
+            color: black; /* Adjust for visibility against the background image */
+            cursor: pointer;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Lobster', cursive;
+            margin: 20px 0;
         }
 
 
@@ -117,17 +121,16 @@
 </head>
 <body>
     <img src="greentop.jpg" alt="Header" class="header">
+    <img src="pencils.png" alt="Pencil" class="otherThing">
+    <div class="middle">
+        <img src="brush.jpg" alt="Pretty" class="background-image">
+        <button onclick="location.href='videos-page.html';" class="nav-item">Videos</button>
+        <button onclick="location.href='tutors-page.html';" class="nav-item">Tutors</button>
+        <button onclick="location.href='readings-page.html';" class="nav-item">Readings</button>
+        <button onclick="location.href='practiceproblems-page.html';" class="nav-item">Practice Problems</button>
+        <button onclick="location.href='games-page.html';" class="nav-item">Games</button>
+    </div>
     
-    <div class="image-text-container">
-        <img src="brush.jpg" alt="Pretty">
-        <div class="overlay-text">
-            <button onclick="location.href='videos-page.html';" class="nav-item">Videos</button>
-            <button onclick="location.href='tutors-page.html';" class="nav-item">Tutors</button>
-            <button onclick="location.href='readings-page.html';" class="nav-item">Readings</button>
-            <button onclick="location.href='practiceproblems-page.html';" class="nav-item">Practice Problems</button>
-            <button onclick="location.href='games-page.html';" class="nav-item">Games</button>
-        </div>
-        </div>
         
     </div>
     <div class="footercontainer">
