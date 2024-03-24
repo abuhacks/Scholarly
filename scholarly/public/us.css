@@ -11,45 +11,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;  /* Use min-height instead of min-width for vertical centering */
+    min-height: 100vh;
     width: 100%;
     background: #f2f3f7;
 }
 
 .container {
+    width: 90%; /* Container width as a percentage of viewport width */
+    max-width: 1200px; /* Maximum width to prevent cards from becoming too wide on large screens */
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px; /* Adjust the max-width as per your requirement */
-    margin: auto; /* Center the container horizontally */
 }
 
 .container .card {
-    width: 400px; /* Increased width */
-    height: 500px; /* Increased height */
-    padding: 40px; /* Adjusted padding */
-    margin: 20px;
+    width: 30%; /* Card width as a percentage of container width */
+    min-width: 300px; /* Minimum card width */
+    margin: 2vw; /* Margin based on viewport width */
+    padding: 2vw; /* Padding based on viewport width */
     background: #f2f3f7;
     box-shadow: 0.6em 0.6em 1.2em #d2dce9,
                 -0.5em -0.5em 1em #ffffff;
     border-radius: 20px;
 }
 
-.container .card .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .container .card .content .imgBx {
-    width: 240px; /* Increased width */
-    height: 240px; /* Increased height */
-    border-radius: 50%;
+    width: 50%; /* Image box width as a percentage of card width */
+    padding-top: 50%; /* Maintain aspect ratio (1:1) */
     position: relative;
-    margin-bottom: 20px; /* Adjusted margin-bottom */
+    border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 5%;
 }
 
 .container .card .content .imgBx img {
@@ -62,32 +56,31 @@ body {
 }
 
 .container .card .content .contentBx h4 {
-    color: #36187d;
-    font-size: 1.9rem; /* Increased font size */
+    font-size: 1.5vw; /* Font size relative to viewport width */
     font-weight: bold;
     text-align: center;
-    letter-spacing: 1px;
+    color: #36187d;
 }
 
 .container .card .content .contentBx h5 {
-    color: #6c758f;
-    font-size: 1.4rem; /* Increased font size */
-    font-weight: bold;
+    font-size: 1.2vw; /* Font size relative to viewport width */
     text-align: center;
+    color: #6c758f;
+    font-weight: bold;
 }
 
 .container .card .content .sci {
-    margin-top: 20px;
+    margin-top: 1vw;
 }
 
 .container .card .content .sci a {
     text-decoration: none;
     color: #6c758f;
-    font-size: 30px;
-    margin: 10px;
+    font-size: 2.5vw; /* Icon size relative to viewport width */
+    margin: 0.5vw;
     transition: color 0.4s;
 }
 
-.container .card .content .sci a:hover { /* Corrected hover pseudo-class */
+.container .card .content .sci a:hover {
     color: #0196e3;
 }
