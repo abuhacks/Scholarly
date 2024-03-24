@@ -1,35 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-*
-{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Bellota Text', cursive;
 }
 
-body{
-    display:flex;
+body {
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    min-height: 100vh;  /* Use min-height instead of min-width for vertical centering */
     width: 100%;
     background: #f2f3f7;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
+    max-width: 1200px; /* Adjust the max-width as per your requirement */
+    margin: auto; /* Center the container horizontally */
 }
 
-.container .card
-{
-    width: 330 px;
-    height: 416px;
-    padding: 60px 30px;
+.container .card {
+    width: 400px; /* Increased width */
+    height: 500px; /* Increased height */
+    padding: 40px; /* Adjusted padding */
     margin: 20px;
     background: #f2f3f7;
     box-shadow: 0.6em 0.6em 1.2em #d2dce9,
@@ -37,51 +36,51 @@ body{
     border-radius: 20px;
 }
 
-.container .card .content{
+.container .card .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
-.container .card .content .imgBx{
-    width: 180px;
-    height: 180px;
+.container .card .content .imgBx {
+    width: 240px; /* Increased width */
+    height: 240px; /* Increased height */
     border-radius: 50%;
-    position: relative;  
-    margin-bottom: 10px;  
-    overflow:hidden;
+    position: relative;
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+    overflow: hidden;
 }
 
-.container .card .content .imgBx img{
-    position:absolute;
+.container .card .content .imgBx img {
+    position: absolute;
     top: 0;
     left: 0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.container .card .content .contentBx h4{
-    color:#36187d;
-    font-size:1.7rem;
+.container .card .content .contentBx h4 {
+    color: #36187d;
+    font-size: 1.9rem; /* Increased font size */
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
 }
 
-.container .card .content .contentBx h5{
+.container .card .content .contentBx h5 {
     color: #6c758f;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Increased font size */
     font-weight: bold;
     text-align: center;
 }
 
-.container .card .content .sci{
+.container .card .content .sci {
     margin-top: 20px;
 }
 
-.container .card .content .sci a{
+.container .card .content .sci a {
     text-decoration: none;
     color: #6c758f;
     font-size: 30px;
@@ -89,6 +88,6 @@ body{
     transition: color 0.4s;
 }
 
-.container .card .content .sci a.hover{
+.container .card .content .sci a:hover { /* Corrected hover pseudo-class */
     color: #0196e3;
 }
