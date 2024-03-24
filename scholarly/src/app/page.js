@@ -65,7 +65,7 @@ export default function Home() {
             textAlign: 'center',
             position: 'absolute', 
             fontWeight: 'bold',
-            top: '900px', 
+            top: '820px', 
             right: '80px', 
         }}>
           EDUCATION. MADE. EASY.
