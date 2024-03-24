@@ -21,15 +21,26 @@
 
 
 .imageLink {
-  position: absolute; /* Position the link absolutely within .description */
-  top: -60px; /* Nudge up by 10px, adjust as needed */
-  right: -60px; /* Nudge right by 10px, adjust as needed */
+  position: absolute; 
+  top: -60px; 
+  right: -60px; 
+}
+
+.imageLink:hover {
+  /* Example hover effect: change the background color and add padding */
+  background-color: rgba(84, 84, 84, 0.1);
+  border-radius: 10px; /* Optional: adds rounded corners */
+  transition: background-color 0.3s, padding 0.3s; /* Smooth transition for hover effect */
+}
+
+.imageLink:hover img {
+  transform: scale(1.1); /* Example: scale up the image */
+  transition: transform 0.3s; /* Smooth transition for scaling */
 }
 
 .pencildescription {
   position: absolute;
 }
-
 
 .description a {
   display: flex;

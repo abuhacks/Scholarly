@@ -1,20 +1,21 @@
 import styles from "./page.module.css";
-
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        
         {/* Add the new imageLink class for additional positioning */}
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.imageLink}  // Apply the new class for positioning adjustments
+          
         >
           <img
             src="/tslate.png"
             alt="Translation Logo"
-            style={{ width: "100px", height: "100px" }}
+            style={{ width: "150px", height: "150px" }}
 
           />
         </a>
@@ -30,9 +31,22 @@ export default function Home() {
           <img
             src="/pencil.png"
             alt="Pencil Logo"
-            style={{ width: "200px", height: "200px" }}  // You can adjust size here as well
+            style={{ width: "200px", height: "200px" }}  
           />
         </a>
+        <p style={{ 
+          color: '#000000', 
+          fontSize: '35px',
+          fontFamily: "'Lobster, cursive'" ,
+          textAlign: 'center',
+          position: 'absolute', 
+          fontWeight: 'bold',
+          top: '150px', 
+          left: '-90px', 
+        }}>
+          Click the Pen
+            to START
+        </p>
       </div>
 
       {/* Grid layout unchanged */}
