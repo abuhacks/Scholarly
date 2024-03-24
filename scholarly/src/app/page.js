@@ -37,7 +37,7 @@ export default function Home() {
         <p style={{ 
           color: '#000000', 
           fontSize: '35px',
-          fontFamily: "'Lobster, cursive'" ,
+          fontFamily: 'Bradley Hand, cursive',
           textAlign: 'center',
           position: 'absolute', 
           fontWeight: 'bold',
@@ -48,6 +48,31 @@ export default function Home() {
             to START
         </p>
       </div>
+      <img
+            src="/cross2.png"
+            alt="Crossimage"
+            style={{ 
+              width: "800px",
+              height: "325px",
+              position: 'absolute',
+              bottom: '5px',
+              right: '0px' }}  
+          />
+          <p style={{ 
+            color: '#000000', 
+            fontSize: '35px',
+            fontFamily: 'Bradley Hand, cursive',
+            textAlign: 'center',
+            position: 'absolute', 
+            fontWeight: 'bold',
+            top: '900px', 
+            right: '80px', 
+        }}>
+          EDUCATION. MADE. EASY.
+        </p>
+
+
+          
 
     </main>
   );
