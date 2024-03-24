@@ -24,7 +24,7 @@ export default function Home() {
       {/* This container now offers flexibility to position the pencil image */}
       <div className={styles.pencildescription} style={{ top: '40%', left: '70%' }}> {/* Example positioning */}
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="us.html"
           target="_blank"
           rel="noopener noreferrer"
         >
