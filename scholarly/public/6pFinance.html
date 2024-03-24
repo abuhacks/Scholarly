@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: hsl(0, 0%, 100%);
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex-grow: 1;
+            width: 80%;
+            margin: auto; /* Center the container */
+            padding-top: 20px; /* Adjust as needed */
+        }
+        .header {
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .navigation {
+            display: flex; 
+            gap: 60px; /* Adjusts the gap between items */
+        }
+
+        .navigation2 {
+            display: flex;
+            margin-top: 80px;
+            gap: 60px; /* Adjusts the gap between items */
+        }
+
+        .nav-item {
+            font-family: 'Lobster', cursive;
+            padding: 20px;
+            font-size: 80px;
+            /* Other styling remains unchanged */
+            cursor: pointer;
+            margin: 10px; /* Provides spacing between buttons */
+            position: relative; /* Allows precise positioning */
+            top: -330px; /* Move up. Adjust value as needed */
+            transform: rotate(-5deg); /* Angle it. Negative values rotate clockwise */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .middle {
+            
+            flex-direction: column;
+            align-items: center; /* Centers items horizontally */
+            justify-content: center; /* Adjusts vertical alignment */
+            position: relative; /* Establishes a positioning context */
+            max-width: 10%; /* Adjust as needed */
+            margin: auto; /* Centers the container */
+            top: -70px;
+            right: 145px;
+            transform: rotate(-160deg);
+        }
+
+        .schoText {
+            font-family: 'Lobster', cursive;
+            padding: 20px;
+            font-size: 25px;
+            /* Other styling remains unchanged */
+            cursor: pointer;
+            margin: 10px; /* Provides spacing between buttons */
+            position: relative; /* Allows precise positioning */
+            top: -360px; /* Move up. Adjust value as needed */
+            right: -500px;
+            transform: rotate(-5deg); /* Angle it. Negative values rotate clockwise */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .dinosaur {
+            max-width: 300px;
+            position: absolute;
+            top: 400px;
+            right: 900px;
+            transform: rotate(-10deg);
+        }
+        .footercontainer {
+            text-align: center;
+            width: 100%;
+            position: relative;
+            background-color: hsl(0, 0%, 100%);
+            padding: 0px 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="greentop.jpg" alt="Header" class="header">
+    <img src="pen.jpg" alt="Pen" class="middle">
+    
+    <div class="container">
+        <div class="navigation">
+            <div class="nav-item">Readings</div>
+        </div>
+        
+            
+            
+    </div>
+    <div class="footercontainer">
+        <img src="bottomgreen.jpg" alt="Footer" style="width:100%; height:auto;">
+        © 2024 Scholarly. All rights reserved.
+    </div>
+    
+    <button class="image-button" onclick="window.location.href='destination-page.html';">
+        <img src="dinoback.png" alt="Dinosaur" class="dinosaur">
+    </button>
+    
+</body>
+</html>

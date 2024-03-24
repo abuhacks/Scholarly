@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: hsl(0, 0%, 100%);
+            height: 100%;
+        }
+        .container {
+            flex-grow: 1;
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        .header {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+        .bookshelf {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0; 
+        }
+        .book {
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .book:hover {
+            transform: scale(1.1);
+        }
+        .footercontainer {
+            text-align: center;
+            width: 100%;
+            background-color: hsl(0, 0%, 100%);
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <img src="greentop.jpg" alt="Header" class="header">
+    <div class="container">
+        <div class="bookshelf">
+            <img src="CS1.jpeg" alt="CS Book 1" class="book" onclick="window.location.href='CS_book1_page.html';">
+            <img src="CS2.jpeg" alt="CS Book 2" class="book" onclick="window.location.href='CS_book2_page.html';">
+            <img src="CS3.jpeg" alt="CS Book 3" class="book" onclick="window.location.href='CS_book3_page.html';">
+            <img src="CS4.png" alt="CS Book 4" class="book" onclick="window.location.href='CS_book4_page.html';">
+        </div>
+    </div>
+    <div class="footercontainer">
+        <img src="bottomgreen.jpg" alt="Footer" style="width:100%; height:auto;">
+        © 2024 Artistic. All rights reserved.
+    </div>
+</body>
+</html>
