@@ -1,10 +1,33 @@
-.video-item {
-    display: flex !important;
-    align-items: center !important;
-    cursor: pointer;
-}
+/* Add these styles to your CSS file */
 
-.video-item.item img {
-    max-width: 200px;
-    max-height: 250px ;
-}
+/* Center the search bar at the top */
+.search-bar {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  /* Style the search input */
+  .search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Style the search button */
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color, change as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3; /* Darker blue color on hover, change as needed */
+  }
+  
