@@ -6,7 +6,7 @@ export default function Home() {
         
         {/* Add the new imageLink class for additional positioning */}
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="/us.html"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.imageLink}  // Apply the new class for positioning adjustments
@@ -24,7 +24,7 @@ export default function Home() {
       {/* This container now offers flexibility to position the pencil image */}
       <div className={styles.pencildescription} style={{ top: '40%', left: '70%' }}> {/* Example positioning */}
         <a
-          href="us.html"
+          href="/2page.html"
           target="_blank"
           rel="noopener noreferrer"
         >
