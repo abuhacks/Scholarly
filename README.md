@@ -27,4 +27,7 @@ You can check if you have Node and npm installed by running `node -v` and `npm -
 1. Clone the Scholarly repository to your local machine:
 
 ```bash
-git clone [URL of the Scholarly repository]
+git clone (https://github.com/abuhacks/Scholarly)
+cd Scholarly/scholarly
+npm install
+npm run dev
